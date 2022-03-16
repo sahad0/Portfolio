@@ -2,8 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  
 }
 
 a {
@@ -13,4 +12,44 @@ a {
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+.nav-item{
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.hcolor{
+  color: #d94ef5;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 550;
+  font-size: 15vw;
+}
+
+.h1color{
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  font-size: 8vw;
+}
+
+.h2color{
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 600;
+}
+.hfour{
+  font-family: 'Roboto Slab', serif;
+  font-weight: 100;
+  font-size: 25px;
+}
+
+
+.responsive-iframe{
+  width: 100% !important;
+}
+
+
