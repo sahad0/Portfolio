@@ -11,7 +11,7 @@ import React from 'react';
 		<>
 		
 		<div className='container-fluid xs' style={{margin:"0",padding:"0",}}>
-            <iframe className="responsive-iframe"src='https://my.spline.design/macbookprocopy-a0939a85464c60001698a92b0d8f8055/' frameborder='0'  width='770px' height='730px'></iframe>
+            <iframe className="responsive-iframe"src='https://my.spline.design/macbookprocopy-a0939a85464c60001698a92b0d8f8055/' frameBorder='0'  width='770px' height='730px'></iframe>
         </div>
 		
 		</>
