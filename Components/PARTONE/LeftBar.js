@@ -1,13 +1,42 @@
 import React from "react";
+import {motion} from "framer-motion";
+
+const basicFramer = {
+
+    initial : {
+        x : -100,
+        opacity : 0,
+       
+    },
+
+    animate : {
+        x : 0,
+        opacity:1,
+        
+    },
+    exit : {
+        x : 0,
+        opacity:1,
+       
+    }
+
+}
+
+
 
 function LeftBar() {
     return (
-    <div className="container-fluid" style={{margin:"0",padding:"0",}}>
-        <h4 className="hfour" style={{color:"white",marginLeft:"20%",}}><span className="hcolor display-2">H</span>
+    <motion.div variants={basicFramer} initial="initial" exit="exit" animate="animate" transition={{duration:1,delay:1,}} className="container-fluid" style={{margin:"0",padding:"0",}}>
+        
+        <h4 className="hfour" style={{color:"white",marginLeft:"20%",}}>
+            <motion.span  
+            
+            
+            className="hcolor display-2">H</motion.span>
         <span className="h1color display-1">ello,</span>
         
-        <br/>My name is <span className="" style={{color:"#d94ef5"}}>Fif</span> and I am a <span className="" style={{color:"#d94ef5"}}>Web </span>Developer.</h4>
-    </div>);
+        <br/>My name is <span className="hello" style={{color:"#d94ef5"}}>Fif</span> and I am a <span className="" style={{color:"#d94ef5"}}>Web </span>Developer.</h4>
+    </motion.div>);
 };
 
 export default LeftBar;

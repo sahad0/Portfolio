@@ -5,6 +5,7 @@ body {
   
 }
 
+
 a {
   color: inherit;
   text-decoration: none;
@@ -54,3 +55,51 @@ a {
 }
 
 
+.para{
+  font-weight: 500 !important;
+}
+
+.anime{
+  
+  filter: grayscale(40%);
+}
+.anime:hover{
+  filter: grayscale(0%);
+}
+.card{
+  background-color: black;
+}
+.seccont{
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.anime{
+  height:180px;
+  width: 180px;
+}
+
+.pinkframe{
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .pinkframe {
+    display: none;
+  }
+}
