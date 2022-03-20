@@ -1,38 +1,38 @@
 import React from 'react';
 import { motion,AnimatePresence } from 'framer-motion';
-// const basicFramer = {
+const basicFramer = {
 
-//     initial : {
-//         x : 0,
-//         opacity : 0,
+    initial : {
+        x : 0,
+        opacity : 0,
        
-//     },
+    },
 
-//     animate : {
-//         x : -20,
-//         opacity:1,
+    animate : {
+        x : -20,
+        opacity:1,
         
-//     },
-//     exit : {
-//         x : -20,
-//         opacity:1,
+    },
+    exit : {
+        x : -20,
+        opacity:1,
        
-//     }
+    }
 
-// }
+}
 
- function RightBar() {
+ function RightBar({src, height,width}) {
 
 	
 
 
 	return (
 		<>
+        
 		<AnimatePresence >
-		<div className='container-fluid xs' style={{margin:"0",padding:"0",}}>
-        <motion.iframe initial={{opacity:0}} animate={{opacity:1}} transition={{delay:17}}
-			className="responsive-iframe"src='https://my.spline.design/macbookprocopy-a0939a85464c60001698a92b0d8f8055/'  frameBorder='0'  width='770px' height='730px'></motion.iframe>
-        </div>
+		<motion.div variants={basicFramer} initial="initial" animate="animate" transition={{delay:1,duration:1.4}}  className='container-fluid xs' style={{margin:"0",padding:"0",}}>
+        <iframe src={src} width={width} height={height} scrolling="no"></iframe>
+		</motion.div>
 		</AnimatePresence>
 		</>
 		

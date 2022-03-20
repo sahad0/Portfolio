@@ -85,7 +85,9 @@ a {
 .pinkframe{
   display: block;
 }
-
+.ant-spin-text{
+  color: #d94ef5; 
+}
 
 
 
