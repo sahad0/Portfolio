@@ -26,7 +26,7 @@ function LeftBar2() {
             <div className="card">
                 <div className="card-body ">
                     
-                        <motion.img whileHover={{scale:1.4}} className="img-fluid anime" src="./images/travel.png" alt="Anime" />
+                        <motion.img whileHover={{scale:1.4}} className="img-fluid anime" src="./images/Open1.png" alt="Anime" />
                 </div>  
             </div>  
                 

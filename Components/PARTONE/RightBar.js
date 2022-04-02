@@ -3,25 +3,25 @@ import { motion,AnimatePresence } from 'framer-motion';
 const basicFramer = {
 
     initial : {
-        x : 0,
+        y : 0,
         opacity : 0,
        
     },
 
     animate : {
-        x : -20,
+        y : -100,
         opacity:1,
         
     },
     exit : {
-        x : -20,
+        
         opacity:1,
        
     }
 
 }
 
- function RightBar({src, height,width}) {
+ function RightBar() {
 
 	
 
@@ -29,11 +29,14 @@ const basicFramer = {
 	return (
 		<>
         
-		<AnimatePresence >
-		<motion.div variants={basicFramer} initial="initial" animate="animate" transition={{delay:1,duration:1.4}}  className='container-fluid xs' style={{margin:"0",padding:"0",}}>
-        <iframe src={src} width={width} height={height} scrolling="no"></iframe>
+		
+		<motion.div  variants={basicFramer} initial="initial"  animate="animate" transition={{delay:2,duration:2}}  className='container-fluid xs my-3' style={{margin:"0",padding:"0",}}>
+            <div className='card lc' style={{width:"80%"}} > mx-3
+                <img className='img-fluid lap' draggable="false" src="./images/lap.png"></img>
+            </div>
+        
 		</motion.div>
-		</AnimatePresence>
+		
 		</>
 		
 	);
