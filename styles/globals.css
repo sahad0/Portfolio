@@ -88,6 +88,7 @@ a {
 }
 .ant-spin-text{
   color: #d94ef5; 
+  color: #514ef5;
 }
 
 
@@ -105,9 +106,18 @@ a {
   transform: translateY(-10px);
  
 }
+.avc{
+  border-radius: 8px;
+  transition: 1.5s;
+  background-color: #d94ef5;
+  
+  transform: rotateX(-20deg);
+}
 
-#Layer_1{
- 
+.avc:hover{
+  transform: rotateY(180deg) ;
+  
+  
 }
 
 

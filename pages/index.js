@@ -3,7 +3,8 @@
 import Navbar from '../Components/Navbar';
 import LeftBar from '../Components/PARTONE/LeftBar';
 import RightBar from '../Components/PARTONE/RightBar';
-import Svvg from '../Components/PARTTHREE/SVGGS';
+import AvatarCard from '../Components/PARTTHREE/card';
+
 import PinkFrame from '../Components/PARTTWO/Frame';
 
 import LeftBar2 from '../Components/PARTTWO/LeftBar';
@@ -55,9 +56,14 @@ export default function Home() {
     
      <div className='container-fluid c3' style={{height:"auto",width:"100%",backgroundColor:"black",marginTop:"0",padding:"auto"}}>
         <div className='row'>
-          <div className='col-md-8'></div>
-          <div className='col-md-4'>
-            {/* <Svvg /> */}
+          <div className='col-lg-1'></div>
+          <div className='col-lg-7' >
+            <AvatarCard />
+            
+          </div>
+          
+          <div className='col-lg-4'>
+            
           </div>
         </div>
      </div>
