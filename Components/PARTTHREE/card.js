@@ -10,7 +10,7 @@ function AvatarCard() {
     
 
     return (<>
-        <div className='card avc my-5 ' style={{height:"auto",width:"30%"}} >
+        <div className='card avc my-5 ' style={{height:"auto"}} >
            
             
             {/* <motion.svg 

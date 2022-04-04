@@ -127,6 +127,9 @@ a {
 #Layer_1{
   margin-left: 25%;
 }
+.avc{
+  width: 30%;
+}
 
 @media only screen and (max-width: 600px) {
   .c1{
@@ -148,7 +151,7 @@ a {
   .seccont{
   
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(125px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(135px,1fr));
     grid-column-gap: 10px;
     grid-row-gap: 10px;
   }
@@ -158,6 +161,9 @@ a {
   }
   #Layer_1{
     margin-left: 28%;
+  }
+  .avc{
+    width: 50%;
   }
   
 }
