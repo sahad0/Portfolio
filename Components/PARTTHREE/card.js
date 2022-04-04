@@ -56,7 +56,7 @@ function AvatarCard() {
             
             <div className="modal-body" >
             <motion.svg 
-                align="center"
+                
                 version="1.1" 
                 id="Layer_1" 
                 xmlns="http://www.w3.org/2000/svg" 
@@ -64,7 +64,7 @@ function AvatarCard() {
                 width="200px"
                 height="200px"
                 viewBox="0 0 190.45 144.26"
-                style={{marginLeft:"100px"}}
+                
             
                 >
                     <motion.path initial={{opacity:0,pathLength:0}}

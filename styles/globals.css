@@ -122,7 +122,9 @@ a {
 }
 
 
-
+#Layer_1{
+  margin-left: 25%;
+}
 
 @media only screen and (max-width: 600px) {
   
@@ -149,6 +151,9 @@ a {
 
   .lap{
     padding-left: 60px;
+  }
+  #Layer_1{
+    margin-left: 0%;
   }
   
 }
