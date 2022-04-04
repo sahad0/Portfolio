@@ -31,7 +31,7 @@ const basicFramer = {
         
 		
 		<motion.div  variants={basicFramer} initial="initial"  animate="animate" transition={{delay:2,duration:2}}  className='container-fluid xs my-3' style={{margin:"0",padding:"0",}}>
-            <div className='card lc' style={{width:"80%"}} > mx-3
+            <div className='card lc'  > mx-3
                 <img className='img-fluid lap' draggable="false" src="./images/lap.png"></img>
             </div>
         

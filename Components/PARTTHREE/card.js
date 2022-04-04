@@ -46,15 +46,15 @@ function AvatarCard() {
       
 
 
-        <div class="modal" id="myModal" >
-        <div class="modal-dialog modal-dialog-centered" >
-            <div class="modal-content">
+        <div className="modal" id="myModal" >
+        <div className="modal-dialog modal-dialog-centered" >
+            <div className="modal-content">
 
             
          
 
             
-            <div class="modal-body" style={{backgroundColor:"black",paddingLeft:"75px"}}>
+            <div className="modal-body" style={{backgroundColor:"black",paddingLeft:"75px"}}>
             <motion.svg 
                 version="1.1" 
                 id="Layer_1" 
