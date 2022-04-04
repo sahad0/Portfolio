@@ -16,7 +16,9 @@ a {
   margin: 0;
   padding: 0;
 }
-
+.c1{
+  height: 110vh;
+}
 .nav-item{
   font-family: 'Roboto Slab', serif;
   font-size: 20px;

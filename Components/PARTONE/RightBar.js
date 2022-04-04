@@ -3,13 +3,13 @@ import { motion,AnimatePresence } from 'framer-motion';
 const basicFramer = {
 
     initial : {
-        y : 0,
+        y : -50,
         opacity : 0,
        
     },
 
     animate : {
-        y : -100,
+        y : 50,
         opacity:1,
         
     },

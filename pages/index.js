@@ -32,7 +32,7 @@ export default function Home() {
   <>
   
     <Navbar />
-     <div className='container-fluid c1' style={{height:"auto",width:"100%",backgroundColor:"black",margin:"auto",padding:"auto"}}>
+     <div className='container-fluid c1' style={{width:"100%",backgroundColor:"black"}}>
        
           <div className='row'>
             <div className='col-md-5'style={{margin:"0",padding:"0",}}>
