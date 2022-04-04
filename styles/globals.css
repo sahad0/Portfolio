@@ -129,7 +129,9 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
-  
+  .c1{
+    height: 70vh;
+  }
   .anime{
     margin-left: auto;
   }
