@@ -7,7 +7,10 @@ import PinkFrame from '../Components/PARTTWO/Frame';
 
 import LeftBar2 from '../Components/PARTTWO/LeftBar';
 
-import { motion } from 'framer-motion';
+import { motion ,useAnimation } from 'framer-motion';
+
+import{useInView} from "react-intersection-observer";
+import { useEffect } from 'react';
 
 
 // const LapFrame = loadable(() => import("../Components/PARTONE/RightBar.js"), {
@@ -19,12 +22,14 @@ import { motion } from 'framer-motion';
 
 const framerAnime  = {
   initial : {
-    y : 90,
+    x : 90,
+    width:"0%",
   
     opacity:0,
   },
   anime : {
-    y:0,
+    width:"100%",
+    x:0,
     opacity:1,
   },
 
@@ -35,8 +40,34 @@ const framerAnime  = {
 
 export default function Home() {
 
+  const [ref,inView] = useInView({
+    threshold:0.3
+  });
+  const animations = useAnimation();
 
+  
 
+  useEffect(()=>{
+    
+    if(inView){
+      animations.start({
+        width:"100%",
+        x:0,
+        opacity:1,
+        transition:{duration:2,when:"beforeChildren"},
+        
+      })
+    }
+    else{
+      animations.start({
+        x : 90,
+      width:"50%",
+      opacity:0,
+      transition:{duration:2,when:"beforeChildren"},
+      })
+    }
+
+  },[inView]);
 
   return (
   <>
@@ -45,10 +76,13 @@ export default function Home() {
      <div className='container-fluid c1' style={{width:"100%",backgroundColor:"blue"}}>
        
           <div className='row' style={{backgroundColor:"black"}}>
-            <div className='col-5' >
+            <div className='col-6' style={{height:"100vh"}} >
               <LeftBar />
             </div>
-            <motion.div variants={framerAnime} initial="initial" animate="anime" transition={{delay:2,duration:"1"}} className='col-7 'style={{backgroundColor:"#d94ef5"}}>
+            <div className='col-6 emp'>
+             <motion.img  initial={{opacity:0,}} animate={{opacity:1}} transition={{delay:2,duration:1,}}  className='img-fluid' style={{scale:"0.8"}} src='./images/poki.png'></motion.img>
+            </div>
+            <motion.div ref={ref} variants={framerAnime}  animate={animations} className='col-12'style={{backgroundColor:"#d94ef5"}}>
             
             <RightBar />
             </motion.div>
