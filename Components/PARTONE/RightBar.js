@@ -3,13 +3,13 @@ import { motion,AnimatePresence } from 'framer-motion';
 const basicFramer = {
 
     initial : {
-        y : -50,
+        y : 20,
         opacity : 0,
        
     },
 
     animate : {
-        y : 50,
+        y : 0,
         opacity:1,
         
     },
@@ -30,12 +30,12 @@ const basicFramer = {
 		<>
         
 		
-		<motion.div  variants={basicFramer} initial="initial"  animate="animate" transition={{delay:2,duration:2}}  className='container-fluid xs my-3' style={{margin:"0",padding:"0",}}>
-            <div className='card lc'  > 
-                <img className='img-fluid lap' draggable="false" src="./images/lap.png"></img>
-            </div>
+		
+            <motion.div className='card-body lc '  variants={basicFramer} initial="initial"  animate="animate" transition={{delay:4,duration:1}}> 
+                <img className='img-fluid lap ' draggable="false" src="./images/lap.png"></img>
+            </motion.div>
         
-		</motion.div>
+		
 		
 		</>
 		
