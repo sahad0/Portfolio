@@ -18,7 +18,7 @@ function MiniRight() {
             animations.start({
                 
                 opacity:1,
-              transition:{delay:2,duration:2},
+              transition:{delay:2,duration:1},
               
             })
           }
@@ -27,7 +27,7 @@ function MiniRight() {
             animations.start({
                 
                 opacity : 0,
-            transition:{delay:2,duration:2},
+            transition:{delay:2,duration:1},
             })
           }
     },[inView]);
