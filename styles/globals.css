@@ -2,7 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  /* background-color: black; */
+  background-color: black;
 }
 
 
@@ -99,9 +99,16 @@ a {
 }
 
 
+.abcd{
+  filter: grayscale(-20) !important;
+}
 
-
-
+.techimg{
+  scale:0.8 !important;
+}
+.techimggit{
+  scale: 1.2;
+}
 
 
 .avc{

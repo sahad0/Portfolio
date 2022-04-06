@@ -1,12 +1,25 @@
-import React from "react";
-
+import React, { useEffect, useState } from "react";
+import {useRouter} from "next/router";
 import {motion} from "framer-motion"
 function AvatarCard() {
 
    
     
 
+    const router = useRouter();
+    const[load,setLoad] = useState(false);
+    useEffect(()=>{
+        if(load){
+            window.location.href="/profile"
+        }
+    },[load]);
+    
 
+    function routProfile(){
+        setTimeout(()=>{
+            setLoad(true);
+        },[5000])
+    }
     
 
     return (<>
@@ -15,9 +28,9 @@ function AvatarCard() {
             
             
             
-            <div className='card-body' >
+            <div className='card-body' data-bs-toggle="modal" data-bs-target="#myModal"onClick={routProfile} >
                 <p style={{color:"black",fontFamily:"'Roboto Slab', serif"}} align="center">ƎM ЯƎHԳIƆƎႧ</p>
-                <img src='./images/avatar-removebg.png'  data-bs-toggle="modal" data-bs-target="#myModal" className='img-fluid' style={{height:"auto",width:"auto",}}/>
+                <img src='./images/avatar-removebg.png'   className='img-fluid' style={{height:"auto",width:"auto",}}/>
             </div>
             
 

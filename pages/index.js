@@ -11,6 +11,7 @@ import { motion ,useAnimation } from 'framer-motion';
 
 import{useInView} from "react-intersection-observer";
 import { useEffect } from 'react';
+import MiniRight from '../Components/PARTONE/MiniRight';
 
 
 // const LapFrame = loadable(() => import("../Components/PARTONE/RightBar.js"), {
@@ -60,7 +61,7 @@ export default function Home() {
     }
     else{
       animations.start({
-        x : 90,
+        x : -20,
       width:"50%",
       opacity:0,
       transition:{duration:2,when:"beforeChildren"},
@@ -73,7 +74,7 @@ export default function Home() {
   <>
   
     <Navbar />
-     <div className='container-fluid c1' style={{width:"100%",backgroundColor:"blue"}}>
+     <div  className='container-fluid c1' style={{width:"100%",backgroundColor:"blue"}}>
        
           <div className='row' style={{backgroundColor:"black"}}>
             <div className='col-6' style={{height:"100vh"}} >
@@ -83,8 +84,17 @@ export default function Home() {
              <motion.img  initial={{opacity:0,}} animate={{opacity:1}} transition={{delay:2,duration:1,}}  className='img-fluid' style={{scale:"0.8"}} src='./images/poki.png'></motion.img>
             </div>
             <motion.div ref={ref} variants={framerAnime}  animate={animations} className='col-12'style={{backgroundColor:"#d94ef5"}}>
+              
+            <div className='row'>
+              <div className='col-8'>
+                <RightBar />
+              </div>
+              <div className='col-4'>
+                <MiniRight />
+              </div>
+            </div>
+
             
-            <RightBar />
             </motion.div>
           </div>
      </div>
