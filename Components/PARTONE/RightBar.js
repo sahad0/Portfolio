@@ -18,6 +18,7 @@ import { useInView } from 'react-intersection-observer';
         if(inView){
             
             animations.start({
+                scale:0.7,
                 y : 0,
                 opacity:1,
               transition:{duration:2,delay:0},
@@ -27,6 +28,7 @@ import { useInView } from 'react-intersection-observer';
           else{
               
             animations.start({
+                scale:0.7,
                 y : 200,
                 opacity : 0,
             transition:{duration:2,delay:0},

@@ -2,7 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background-color: black;
+ 
 }
 
 
@@ -134,7 +134,7 @@ a {
 }
 
 .lap{
-  scale: 0.75;
+  
   transition: 1s;
 }
 .lap:hover{

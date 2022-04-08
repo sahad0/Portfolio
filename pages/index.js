@@ -74,10 +74,10 @@ export default function Home() {
   <>
   
     <Navbar />
-     <div  className='container-fluid c1' style={{width:"100%",backgroundColor:"blue"}}>
+     <div  className='container-fluid c1' style={{width:"100%",backgroundColor:"white"}}>
        
           <div className='row' style={{backgroundColor:"black"}}>
-            <div className='col-6' style={{height:"100vh"}} >
+            <div className='col-6' style={{height:"auto"}} >
               <LeftBar />
             </div>
             <div className='col-6 emp'>
