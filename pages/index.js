@@ -3,7 +3,7 @@ import LeftBar from '../Components/PARTONE/LeftBar';
 import RightBar from '../Components/PARTONE/RightBar';
 import AvatarCard from '../Components/PARTTHREE/card';
 
-import PinkFrame from '../Components/PARTTWO/Frame';
+
 
 import LeftBar2 from '../Components/PARTTWO/LeftBar';
 
@@ -74,9 +74,15 @@ export default function Home() {
   <>
   
     <Navbar />
+    
      <div  className='container-fluid c1' style={{width:"100%",backgroundColor:"white"}}>
-       
-          <div className='row' style={{backgroundColor:"black"}}>
+     <div className='weeb container-fluid' style={{color:"black",fontFamily: "'Bebas Neue', cursive"}}>
+       <h1 className='hr my-2'>W</h1>
+       <h1 className='hr'>E</h1>
+       <h1 className='hr'>E</h1>
+       <h1 className='hr'style={{color:"#d94ef5"}}>B</h1>
+      </div>
+          <div className='row' style={{backgroundColor:"white"}}>
             <div className='col-6' style={{height:"auto"}} >
               <LeftBar />
             </div>
@@ -98,12 +104,13 @@ export default function Home() {
             </motion.div>
           </div>
      </div>
+     <div className='container-fluid c22' style={{backgroundColor:"white",padding:"60px"}}><p className='display-5 para my-5 ' align="center" style={{fontFamily: "'Bebas Neue', cursive",color:'#d94ef5',}}> <span style={{color:'black',fontSize:'4vh',wordSpacing:'10px',fontWeight:100}}><span className='display-5'>W</span><span style={{fontSize:'5vh'}}>hat I</span> </span>L<span style={{fontSize:'5vh'}}>ove?</span> </p></div>
      <div className='container-fluid c2' style={{height:"auto",width:"100%",backgroundColor:"black",marginTop:"0",padding:"auto"}}>
         
            
-        <p className='display-5 para  ' align="center" style={{fontFamily:"'Roboto Slab', serif",color:'#d94ef5',paddingTop:"10%",}}> <span style={{color:'white',fontSize:'4vh',wordSpacing:'10px',fontWeight:100}}><span className='display-5'>W</span><span style={{fontSize:'5vh'}}>hat I</span> </span>L<span style={{fontSize:'5vh'}}>ove?</span> </p>
+        
         <LeftBar2 />   
-         <PinkFrame />
+         
 
 
      </div>

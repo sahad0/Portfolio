@@ -28,14 +28,14 @@ function LeftBar() {
     return (
     <div  className="container-fluid"  >
         
-        <motion.h4 variants={basicFramer} initial="initial" animate="animate" transition={{duration:2,}} className="hfour" style={{color:"white",paddingLeft:"10%",}}>
+        <motion.h4 variants={basicFramer} initial="initial" animate="animate" transition={{duration:2,}} className="hfour" style={{color:"black",paddingLeft:"10%",}}>
             <span  
             
             
             className="hcolor display-2">H</span>
         <span className="h1color display-1">ello,</span>
         
-        <br/>My name is <span className="hello" style={{color:"#d94ef5"}}>Fif</span> and I am a <span className="" style={{color:"#d94ef5"}}>Web </span>Designer / Dev.</motion.h4>
+        <br/>M<span style={{fontSize:"2.5vh"}}>y</span> N<span style={{fontSize:"2.5vh"}}>ame is </span> <span className="hello" style={{color:"#d94ef5"}}>F<span style={{fontSize:"2.5vh"}}>IF </span> </span>  <span style={{fontSize:"2.5vh"}}>AND </span> I <span style={{fontSize:"2.5vh"}}>am </span>A <span className="" style={{color:"#d94ef5"}}>D<span style={{fontSize:"2.5vh"}}>esigner </span> </span>/Dev.</motion.h4>
     
         
 

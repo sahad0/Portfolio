@@ -2,7 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
- 
+ background-color: black;
 }
 
 
@@ -38,22 +38,30 @@ a {
 }
 
 .h1color{
-  color: white;
+  color: black;
   font-family: 'Roboto Slab', serif;
   font-weight: 400;
   font-size: 8vw;
 }
 
 .h2color{
-  color: white;
+  color: black;
   font-family: 'Roboto Slab', serif;
-  font-weight: 400;
-  font-size: 8vw;
+  
+  font-size: 12vw;
+}
+.weeb{
+  position: absolute;
+  margin: 0;
+  padding-left:85% ;
+  
+  width: 50%;
+  height: auto;
 }
 .hfour{
-  font-family: 'Roboto Slab', serif;
-  font-weight: 100;
-  font-size: 2vh;
+  font-family: 'Bebas Neue', cursive;
+  
+  font-size: 3vh;
 }
 
 
@@ -109,7 +117,10 @@ a {
 .techimggit{
   scale: 1.2;
 }
-
+.hr{
+  transform-origin: 0 0;
+  transform: rotate(90deg);
+}
 
 .avc{
   border-radius: 8px;
@@ -144,9 +155,20 @@ a {
   display: block;
 }
 
-
+.c1{
+  height: auto;
+}
 
 @media only screen and (max-width: 600px) {
+  .c1{
+    height: 150vh;
+  }
+  .h2color{
+    font-size: 12vh;
+  }
+  .h1color{
+    font-size: 6vh;
+  }
   .eff{
     display: none;
   }

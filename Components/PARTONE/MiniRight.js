@@ -36,7 +36,7 @@ function MiniRight() {
 
     return (<>
     
-    <motion.div ref={ref} animate={animations} transition={{delay:5}} className='col-12 my-5' align="center" style={{fontFamily:"'Roboto Slab', serif",fontSize:"5vh",fontWeight:"2px"}} >Tech Stacks</motion.div>
+    <motion.div ref={ref} animate={animations} transition={{delay:5}} className='col-12 my-5' align="center" style={{fontFamily:"'Roboto Slab', serif",fontSize:"30px",fontWeight:"2px"}} >Tech Stacks</motion.div>
         <motion.div  animate={animations} className='row'>
             <div className='col-4 '>
                 <motion.img initial={{scale:0.8}} className='img-fluid techimg'  src= "./images/javasr.png" />
