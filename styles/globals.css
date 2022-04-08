@@ -140,11 +140,16 @@ a {
 .lap:hover{
   transform: translateY(-10px);
 }
-
+.eff{
+  display: block;
+}
 
 
 
 @media only screen and (max-width: 600px) {
+  .eff{
+    display: none;
+  }
   .c1{
     height: auto;
   }
@@ -173,8 +178,3 @@ a {
   
 }
 
-@media only screen and (min-width: 600px) and (max-width:1000px) {
-  .c1{
-    height: auto;
-  }
-}

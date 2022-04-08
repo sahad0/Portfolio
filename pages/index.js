@@ -83,7 +83,7 @@ export default function Home() {
             <div className='col-6 emp'>
              <motion.img  initial={{opacity:0,}} animate={{opacity:1}} transition={{delay:2,duration:1,}}  className='img-fluid' style={{scale:"0.8"}} src='./images/poki.png'></motion.img>
             </div>
-            <motion.div ref={ref} variants={framerAnime}  animate={animations} className='col-12'style={{backgroundColor:"#d94ef5"}}>
+            <motion.div ref={ref} variants={framerAnime}  animate={animations} className='col-12 eff'style={{backgroundColor:"#d94ef5"}}>
               
             <div className='row'>
               <div className='col-8'>
