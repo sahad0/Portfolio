@@ -71,7 +71,7 @@ function MiniRight() {
             </div>
             <div className='col-4'></div>
             <div className='col-4'>
-                <motion.img animate={animations}  className='img-fluid techimg'  src= "./images/frob.png" /> 
+                <motion.img animate={animations}  className='img-fluid techimg my-2'  src= "./images/vercel.png" /> 
             </div>
         </motion.div>
         </motion.div>

@@ -59,7 +59,7 @@ function AvatarCard() {
                 width="200px"
                 height="200px"
                 viewBox="0 0 190.45 144.26"
-                
+                fill={"black"}
             
                 >
                     <motion.path initial={{opacity:0,pathLength:0}}
