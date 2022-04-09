@@ -2,7 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
- background-color: black;
+ 
 }
 
 
@@ -166,9 +166,7 @@ a {
   .h2color{
     font-size: 12vh;
   }
-  .h1color{
-    font-size: 6vh;
-  }
+  
   .eff{
     display: none;
   }

@@ -1,12 +1,16 @@
 import React,{useEffect} from "react";
 import {useInView} from "react-intersection-observer";
-import {motion, useAnimation} from "framer-motion"
+import {motion, useAnimation,AnimatePresence} from "framer-motion"
+
+
+
+
 
 
 function MiniRight() {
 
 
-    const[ref,inView] = useInView({threshold:0.1});
+    const[ref,inView] = useInView({threshold:0.2});
 
     
 
@@ -14,58 +18,64 @@ function MiniRight() {
 
     useEffect(()=>{
         if(inView){
-            console.log(inView);
+            
             animations.start({
-                
-                opacity:1,
-              transition:{delay:2,duration:1},
-              
+               
+
+
+                opacity : 1,
+                y : 0,
+                transition:{duration:3,ease:[0.6,0.01,-0.05,0.95],staggerChildren:0.35},
+                scale:0.8,
             })
           }
           else{
-              console.log(false);
+            
             animations.start({
-                
                 opacity : 0,
-            transition:{delay:2,duration:1},
+                y:200,
+                transition:{duration:3,ease:[0.6,0.01,-0.05,0.95],ease:"easeInOut",staggerChildren:0.35},
+                scale:0.8,
+                
             })
           }
     },[inView]);
 
 
 
-    return (<>
-    
-    <motion.div ref={ref} animate={animations} transition={{delay:5}} className='col-12 my-5' align="center" style={{fontFamily:"'Roboto Slab', serif",fontSize:"30px",fontWeight:"2px"}} >Tech Stacks</motion.div>
-        <motion.div  animate={animations} className='row'>
+    return (<AnimatePresence>
+    <motion.div ref={ref}  animate={animations}>
+    <motion.div  animate={animations}  className='col-12 my-5' align="center" style={{fontFamily:"'Roboto Slab', serif",fontSize:"30px",fontWeight:"2px"}} >Tech Stacks</motion.div>
+        <motion.div animate={animations} className='row'>
             <div className='col-4 '>
-                <motion.img initial={{scale:0.8}} className='img-fluid techimg'  src= "./images/javasr.png" />
+                <motion.img animate={animations}  className='img-fluid techimg'  src= "./images/javasr.png" />
             </div>
             <div className='col-4'></div>
             <div className='col-4'>
-                <motion.img initial={{scale:0.8}} className='img-fluid techimg'  src= "./images/next.png" /> 
+                <motion.img animate={animations}  className='img-fluid techimg'  src= "./images/next.png" /> 
             </div>
         </motion.div>
-        <motion.div animate={animations}  className='row'>
+        <motion.div animate={animations}   className='row'>
             <div className='col-4 '>
-                <motion.img initial={{scale:0.8}} className='img-fluid techimggit'  src= "./images/git.png" />
+                <motion.img animate={animations}  className='img-fluid techimggit'  src= "./images/git.png" />
             </div>
             <div className='col-4'></div>
             <div className='col-4'>
-                <motion.img initial={{scale:0.8}} className='img-fluid tech'  src= "./images/html.png" /> 
+                <motion.img animate={animations}  className='img-fluid tech'  src= "./images/html.png" /> 
             </div>
         </motion.div>
         
-        <motion.div animate={animations}  className='row'>
+        <motion.div animate={animations} className='row'>
             <div className='col-4 '>
-                <motion.img initial={{scale:0.8}} className='img-fluid techimg abcd'   src= "./images/css.png" />
+                <motion.img animate={animations}  className='img-fluid techimg abcd'   src= "./images/css.png" />
             </div>
             <div className='col-4'></div>
             <div className='col-4'>
-                <motion.img initial={{scale:0.8}} className='img-fluid techimg'  src= "./images/frob.png" /> 
+                <motion.img animate={animations}  className='img-fluid techimg'  src= "./images/frob.png" /> 
             </div>
         </motion.div>
-    </>)
+        </motion.div>
+    </AnimatePresence>)
 };
 
 export default MiniRight;

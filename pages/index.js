@@ -39,6 +39,7 @@ const framerAnime  = {
 
 
 
+
 export default function Home() {
 
   const [ref,inView] = useInView({
@@ -55,7 +56,7 @@ export default function Home() {
         width:"100%",
         x:0,
         opacity:1,
-        transition:{duration:2,when:"beforeChildren"},
+        transition:{duration:2,when:"beforeChildren",staggerChildren:0.35},
         
       })
     }
@@ -64,7 +65,8 @@ export default function Home() {
         x : -20,
       width:"50%",
       opacity:0,
-      transition:{duration:2,when:"beforeChildren"},
+      transition:{duration:2,when:"beforeChildren",staggerChildren:0.35,ease:"easeIn"},
+      
       })
     }
 
