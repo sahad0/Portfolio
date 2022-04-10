@@ -5,7 +5,7 @@ import { useInView } from 'react-intersection-observer';
 
 const framer = {
   initial:{
-    scale:0.4,
+    scale:0.7,
     y : 200,
     opacity : 0,
   },

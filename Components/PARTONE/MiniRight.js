@@ -77,30 +77,30 @@ function MiniRight() {
     <motion.div variants={listItems}   className='col-12 my-5' align="center" style={{fontFamily:"'Roboto Slab', serif",fontSize:"30px",fontWeight:"2px"}} >Tech Stacks</motion.div>
         <motion.div  className='row'>
             <div className='col-4 '>
-                <motion.img  variants={listItems}  className='img-fluid techimg'  src= "./images/javasr.png" />
+                <motion.img  variants={listItems}  className='img-fluid techimg a'  src= "./images/javasr.png" />
             </div>
             <div className='col-4'></div>
             <div className='col-4'>
-                <motion.img variants={listItems}  className='img-fluid techimg'  src= "./images/next.png" /> 
+                <motion.img variants={listItems}  className='img-fluid techimg a'  src= "./images/next.png" /> 
             </div>
         </motion.div>
         <motion.div    className='row'>
             <div className='col-4 '>
-                <motion.img variants={listItems}  className='img-fluid techimggit'  src= "./images/git.png" />
+                <motion.img variants={listItems}  className='img-fluid techimggit a'  src= "./images/git.png" />
             </div>
             <div className='col-4'></div>
             <div className='col-4'>
-                <motion.img  variants={listItems} className='img-fluid tech'  src= "./images/html.png" /> 
+                <motion.img  variants={listItems} className='img-fluid tech a'  src= "./images/html.png" /> 
             </div>
         </motion.div>
         
         <motion.div  className='row'>
             <div className='col-4 '>
-                <motion.img variants={listItems}  className='img-fluid techimg abcd'   src= "./images/css.png" />
+                <motion.img variants={listItems}  className='img-fluid techimg abcd a'   src= "./images/css.png" />
             </div>
             <div className='col-4'></div>
             <div className='col-4'>
-                <motion.img variants={listItems}  className='img-fluid techimg my-2'  src= "./images/vercel.png" /> 
+                <motion.img variants={listItems}  className='img-fluid techimg my-2 a'  src= "./images/vercel.png" /> 
             </div>
         </motion.div>
         </motion.div>
