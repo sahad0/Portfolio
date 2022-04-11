@@ -23,14 +23,14 @@ function AvatarCard() {
     
 
     return (<>
-        <div className='card avc my-5 ' style={{height:"auto"}} >
+        <div className='card avc my-5'  style={{height:"auto",marginLeft:"25%",}} >
            
             
             
             
-            <div className='card-body' data-bs-toggle="modal" data-bs-target="#myModal"onClick={routProfile} >
+            <div className='card-body' data-bs-toggle="modal" data-bs-target="#myModal">
                 <p style={{color:"black",fontFamily:"'Roboto Slab', serif"}} align="center">ƎM ЯƎHԳIƆƎႧ</p>
-                <img src='./images/avatar-removebg.png'   className='img-fluid' style={{height:"auto",width:"auto",}}/>
+                <img onClick={routProfile}  src='./images/avatar-removebg.png'   className='img-fluid' style={{height:"auto",width:"auto",}}/>
             </div>
             
 
@@ -43,13 +43,13 @@ function AvatarCard() {
 
         <div className="modal" id="myModal" >
         <div className="modal-dialog modal-dialog-centered" >
-            <div className="modal-content" style={{background:"transparent"}}>
+            <div className="modal-content" style={{background:"transparent",border:"none"}}>
 
             
          
 
             
-            <div className="modal-body" >
+            <div className="modal-body" style={{border:"none"}}>
             <motion.svg 
                 
                 version="1.1" 

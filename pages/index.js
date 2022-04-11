@@ -13,6 +13,7 @@ import{useInView} from "react-intersection-observer";
 import { useEffect } from 'react';
 import MiniRight from '../Components/PARTONE/MiniRight';
 import Typewriter from 'typewriter-effect';
+import Typee from '../Components/PARTTHREE/typee';
 
 // const LapFrame = loadable(() => import("../Components/PARTONE/RightBar.js"), {
 //   fallback:  <div className="example"><Spin /></div>
@@ -23,16 +24,21 @@ import Typewriter from 'typewriter-effect';
 
 const framerAnime  = {
   initial : {
-    x : 90,
-    width:"0%",
+    x : -20,
+    width:"50%",
   
     opacity:0,
+    
+
   },
   anime : {
     width:"100%",
     x:0,
     opacity:1,
+   
+
   },
+  
 
 }
 
@@ -42,35 +48,10 @@ const framerAnime  = {
 
 export default function Home() {
 
-  const [ref,inView] = useInView({
-    threshold:0.3
-  });
-  const animations = useAnimation();
-
+ 
   
 
-  useEffect(()=>{
-    
-    if(inView){
-      animations.start({
-        width:"100%",
-        x:0,
-        opacity:1,
-        transition:{duration:2,when:"beforeChildren",staggerChildren:0.35},
-        
-      })
-    }
-    else{
-      animations.start({
-        x : -20,
-      width:"50%",
-      opacity:0,
-      transition:{duration:2,when:"beforeChildren",staggerChildren:0.35,ease:"easeIn"},
-      
-      })
-    }
 
-  },[inView]);
 
   return (
   <>
@@ -91,7 +72,7 @@ export default function Home() {
             <div className='col-6 emp'>
              <motion.img  initial={{opacity:0,}} animate={{opacity:1}} transition={{delay:2,duration:1,}}  className='img-fluid' style={{scale:"0.8"}} src='./images/poki.png'></motion.img>
             </div>
-            <motion.div ref={ref} variants={framerAnime}  animate={animations} className='col-12 eff'style={{backgroundColor:"#d94ef5"}}>
+            <div   className='col-12 eff'style={{backgroundColor:"#d94ef5"}}>
               
             <div className='row'>
               <div className='col-8'>
@@ -103,7 +84,7 @@ export default function Home() {
             </div>
 
             
-            </motion.div>
+            </div>
           </div>
      </div>
      <div className='container-fluid c22' style={{backgroundColor:"white",padding:"60px"}}><p className='display-5 para my-5 ' align="center" style={{fontFamily: "'Bebas Neue', cursive",color:'#d94ef5',}}> <span style={{color:'black',fontSize:'4vh',wordSpacing:'10px',fontWeight:100}}><span className='display-5'>W</span><span style={{fontSize:'5vh'}}>hat I</span> </span>L<span style={{fontSize:'5vh'}}>ove?</span> </p></div>
@@ -125,20 +106,10 @@ export default function Home() {
             
           </div>
           
-          <div className='col-lg-4'>
-          <Typewriter
-              options={{
-                loop:true,
-                autoStart:true,
-              }}
-
-              onInit={(typewriter) => {
-                typewriter.typeString('<h1 class="woah">D<span class="swo">ecode</span><span class="woah1"> M<span class="swo">E</span></span></h1>')
-                  .pauseFor(2500)
-                  
-                  .start();
-              }}
-          />
+          <div className='col-lg-4 ty'>
+              
+              <Typee />
+          
           </div>
         </div>
      </div>
