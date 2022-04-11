@@ -12,18 +12,25 @@ function Profile() {
                 <h1 className="namee my-5"> About Me</h1>
 
                 <div className="row">
-                    <div className="col-6">
+                    <div className="col-4">
                         <h4 className="mx-5 my-4">Mohammed Sahad S</h4>
                         <h6 className="mx-5 my-1">22th SEPT   ,2001</h6>
                         <h6 className="mx-5 my-1">Designer/Developer</h6>
                         <h6 className="mx-5 my-1">+91  6383844237</h6>
+                        <h6 className="mx-5 my-1">INDIA</h6>
                     </div>
-                    <div className="col-6">
+                    <div className="col-4">
                         <h4 className="mx-5 my-5">Skill Sets</h4>
                         <h6 className="mx-5 my-1">HTML  /  CSS</h6>
                         <h6 className="mx-5 my-1">Javascript</h6>
                         <h6 className="mx-5 my-1">JSX</h6>
                         <h6 className="mx-5 my-1">Next.js</h6>
+                    </div>
+                    <div className="col-4">
+                        <h4 className="mx-5 my-4">Accomplishments</h4>
+                        <h6 className="mx-5 my-1">Mew  Book ,</h6>
+                        <p className="mx-5 my-1">(Photo Sharing Application)</p>
+                        
                     </div>
                 </div>
             </div>
