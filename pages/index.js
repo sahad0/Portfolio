@@ -13,6 +13,7 @@ import{useInView} from "react-intersection-observer";
 import { useEffect } from 'react';
 import MiniRight from '../Components/PARTONE/MiniRight';
 import Typewriter from 'typewriter-effect';
+import Typee from '../Components/PARTTHREE/typee';
 
 // const LapFrame = loadable(() => import("../Components/PARTONE/RightBar.js"), {
 //   fallback:  <div className="example"><Spin /></div>
@@ -105,20 +106,10 @@ export default function Home() {
             
           </div>
           
-          <div className='col-lg-4'>
-          <Typewriter
-              options={{
-                loop:true,
-                autoStart:true,
-              }}
-
-              onInit={(typewriter) => {
-                typewriter.typeString('<h1 class="woah">D<span class="swo">ecode</span><span class="woah1"> M<span class="swo">E</span></span></h1>')
-                  .pauseFor(2500)
-                  
-                  .start();
-              }}
-          />
+          <div className='col-lg-4 ty'>
+              
+              <Typee />
+          
           </div>
         </div>
      </div>
