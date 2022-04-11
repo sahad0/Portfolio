@@ -2,7 +2,7 @@ import React from "react";
 
 function Sec1() {
     return (<>
-            <section className="one container-fluid" style={{backgroundColor:"white",height:"100vh",}}>
+            <section className="one container-fluid" style={{backgroundColor:"white",}}>
                 <div className="who container">
                     
                     <p className="fnt"style={{fontFamily:"Abril Fatface",fontSize:"70px",paddingLeft: "4.2rem",paddingRight: "3.2rem",color:"purple"}}>01</p>
@@ -20,7 +20,11 @@ function Sec1() {
                             
                         </div>
                         <div className="col-md-6">
-
+                                <div className="card profcard" >
+                                    
+                                        <img className="img-fluid profimg" src="./images/sahad1.png"></img>
+                                    
+                                </div>
                         </div>
                     </div>
                      
