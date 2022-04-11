@@ -51,10 +51,10 @@ function Sec2() {
                             
                         </div>
                         <div className="col-md-12">
-                        <button class="btn my-4 mx-5">
-                        <span class="btn__inner">
-                            <span class="btn__slide"></span>
-                            <span class="btn__content"style={{letterSpacing:"3px",fontSize:"22px"}} >Hire   Me</span>
+                        <button className="btn my-4 mx-5">
+                        <span className="btn__inner">
+                            <span className="btn__slide"></span>
+                            <span className="btn__content"style={{letterSpacing:"3px",fontSize:"22px"}} >Hire   Me</span>
                         </span>
                         </button>
                         </div>
