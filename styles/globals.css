@@ -179,7 +179,7 @@ a {
   top: 40%;
   left: 10%;
   margin: auto;
-  transition: 3s;
+  transition: 1s;
 }
 .nam:hover::before{
   
@@ -198,10 +198,10 @@ a {
   height: 1.5px;
   background: #020b16;
   position: absolute;
-  top: 36%;
+  top: 38%;
   left: 7%;
   margin: auto;
-  transition: 2s;
+  transition: 1s;
 }
 .fnt1{
   background-color: transparent;
@@ -249,7 +249,25 @@ a {
   font-size: 30px;
 }
 
+
+.two{
+  height: 100vh;
+}
+
+.cmt{
+  transition: 0.7s;
+  width:100%;
+  border-radius: 9px;
+}
+
+.cmt:hover{
+  background-color: rgba(213, 213, 213, 0.426) !important;
+}
+
 @media only screen and (max-width: 600px) {
+  .two{
+    height: 250vh;
+  }
   .c1{
     height: 150vh;
   }
@@ -284,6 +302,42 @@ a {
   }
   .avc{
     width: 50%;
+  }
+
+
+
+  .nam::after{
+    content: "";
+    width: 9.8rem;
+    height: 1.5px;
+    background: #020b16;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    margin: auto;
+    transition: 1s;
+  }
+  .nam:hover::before{
+    
+    width: 0.2rem;
+    
+  }
+  .nam:hover::after{
+    
+    width: 0.2rem;
+    
+  }
+  .nam::before
+  {
+    content: "";
+    width: 9.8rem;
+    height: 1.5px;
+    background: #020b16;
+    position: absolute;
+    top: 38%;
+    left: 24%;
+    margin: auto;
+    transition: 1s;
   }
   
 }

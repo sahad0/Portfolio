@@ -1,6 +1,7 @@
 import '../styles/globals.css';
 import '../styles/valbtn.css';
 import Head from "next/head";
+import "antd/dist/antd.css";
 
 function MyApp({ Component, pageProps }) {
 
