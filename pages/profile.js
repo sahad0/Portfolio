@@ -11,7 +11,8 @@ function Profile() {
         <Sec2 />
         <Sec1 />
         <Sec3 />
-            
+        <section  style={{height:"40vh",backgroundColor:"black"}}>
+        </section>
            
             
         

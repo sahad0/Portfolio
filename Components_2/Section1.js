@@ -9,8 +9,8 @@ function Sec1() {
                     <div className="row">
                         <div className="col-md-6" >
                             <h1 className="namee my-5 mx-5" style={{ fontFamily: "'Bebas Neue', cursive"}}> Who am I?</h1>
-                            <p className="mx-5">My name is Sahad,I love designing and building Web Applications.I am also a weeb who love playing games and watching anime.
-                                I like playing with effects and animations, they amaze me so much .... I have been in love with these scripts ,everyday they taught me new things.
+                            <p className="mx-5">My name is Sahad,I am a self taught developer ,I love designing and building Web Applications.I am also a weeb who love playing games and watching anime.
+                                I like playing with effects and animations, they amaze me so much .... I have been in love with these scripts..
                             </p>
                             <p className="mx-5">
                                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;The next thing I love is Music they fill me with happiness, to be frank they make me creative especially the Lofi's....!
