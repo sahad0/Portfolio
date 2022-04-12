@@ -277,7 +277,53 @@ a {
 .one{
   height: 100vh;
 }
+.soci{
+  color: #020b1683 !important;
+}
+.insta{
+  transition: 1s;
+}
+.linked{
+  transition: 1s;
+}
+.git{
+  transition: 1s;
+}
+.mail{
+  transition: 1s;
+}
+.insta:hover{
+  transform: translateY(-10px);
+  color: red !important;
+  /* background-color: transparent !important; */
+  /* background-image: linear-gradient(45deg, #405de6,#5851db, #833ab4, #c13584, #e1306c, #fd1d1d) !important;
+  background-size: 100% !important;
+  -webkit-background-clip: text !important;
+  -moz-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important; 
+  -moz-text-fill-color: transparent !important; */
+}
+.linked:hover{
+  transform: translateY(-10px);
+  color: #0077b5 !important;
+}
+.git:hover{
+  transform: translateY(-10px);
+  color: black !important;
+}
+.mail:hover{
+  transform: translateY(-10px);
+  color:darkblue !important;
+}
+.cbtn{
+  margin-top: 9%;
+  margin-left: 50%;
+}
 @media only screen and (max-width: 600px) {
+  .cbtn{
+    margin-top: 5%;
+    margin-left: 15%;
+  }
   .two{
     height: 210vh;
   }
