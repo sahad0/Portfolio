@@ -14,6 +14,9 @@ import { useEffect } from 'react';
 import MiniRight from '../Components/PARTONE/MiniRight';
 import Typewriter from 'typewriter-effect';
 import Typee from '../Components/PARTTHREE/typee';
+import MainBar from '../Components/PARTFOUR/Bar';
+import Lbar from '../Components/PARTFOUR/Lbar';
+import Ltter from '../Components/PARTFOUR/Ltter';
 
 // const LapFrame = loadable(() => import("../Components/PARTONE/RightBar.js"), {
 //   fallback:  <div className="example"><Spin /></div>
@@ -114,6 +117,19 @@ export default function Home() {
         </div>
      </div>
 
+     <div className="container-fluid" style={{height:"auto",width:"100%",backgroundColor:"white"}}>
+      <div className='container-fluid c22' style={{backgroundColor:"white",padding:"60px",}}>
+        <Ltter />
+      </div>
+            <div className='row'>
+              <div className='col-md-6'>
+                <Lbar />
+              </div>
+              <div className="col-md-6">
+                  <MainBar />
+              </div>
+            </div>
+    </div>
      
   </>
   );

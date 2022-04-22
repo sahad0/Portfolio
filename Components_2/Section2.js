@@ -51,7 +51,7 @@ function Sec2() {
                             
                         </div>
                         <div className="col-md-12">
-                        <button className="btn  cbtn">
+                        <button className="btn  cbtn" onClick={()=>{window.location.href="#three"}}>
                         <span className="btn__inner">
                             <span className="btn__slide"></span>
                             <span className="btn__content"style={{letterSpacing:"3px",fontSize:"22px"}} >Hire   Me</span>
