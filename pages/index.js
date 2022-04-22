@@ -117,7 +117,7 @@ export default function Home() {
         </div>
      </div>
 
-     <div className="container-fluid" style={{height:"auto",width:"100%",backgroundColor:"white"}}>
+     <div className="container-fluid c4" style={{height:"auto",width:"100%",backgroundColor:"white"}}>
       <div className='container-fluid c22' style={{backgroundColor:"white",padding:"60px",}}>
         <Ltter />
       </div>
@@ -130,6 +130,11 @@ export default function Home() {
               </div>
             </div>
     </div>
+    <div className="container-fluid c5" style={{height:"300px",width:"100%",backgroundColor:"black"}}>
+
+    </div>
+
+    
      
   </>
   );
